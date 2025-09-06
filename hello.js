@@ -1,7 +1,5 @@
 
+const { add, sub } = require("./math");
 
-function add(a, b){
-    return a + b;
-}
-
+console.log(sub(2, 3));
 console.log(add(2, 3));
