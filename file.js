@@ -10,7 +10,7 @@ fs.writeFileSync("./doc.txt", "Doc to be create", (err) => {
 const result2 = fs.readFileSync("./text.txt", "utf-8");
 console.log(result2);
 
-fs.readFile("./do.txt", "utf-8", (err, data) => {
+fs.readFile("./doc.txt", "utf-8", (err, data) => {
     if(err){
         console.error(err);
     } else {
