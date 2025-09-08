@@ -1,4 +1,5 @@
 const fs = require("fs");
+const os = require("os");
 
 // fs.writeFileSync("./text.txt", "Hello Souvik");
 
@@ -20,9 +21,11 @@ const fs = require("fs");
 
 // ************************* 
 
-fs.appendFileSync("./text.txt", `${Date.now()} Hey There\n`);
+// fs.appendFileSync("./text.txt", `${Date.now()} Hey There\n`);
 
-fs.copyFileSync("./text.txt", "./copy.txt")
+// fs.copyFileSync("./text.txt", "./copy.txt");
 
-fs.unlinkSync("./copy.txt")
+// fs.unlinkSync("./copy.txt");
+
+console.log(os.cpus().length);
 
